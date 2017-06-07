@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="renderer" content="webkit">
+		<title>测试</title>
+		<link rel="bookmark" href="../favicon.ico"/>
+		<link rel="shortcut icon" href="../favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<!--<link rel="stylesheet" type="text/css" href="../css/jquery.circliful.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/shizhan.css" />
+		<link rel="stylesheet" type="text/css" href="../css/electromobile.css"/>
+		<!--模态框插件 0426-->
+		<link rel="stylesheet" type="text/css" href="../css/zeroModal.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/laydate.css"/>-->
+		<!--[if lte IE 8]>
+		<script src="excanvas.js"></script>
+		<![endif]-->
+		<!--<script src="../lib/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function auto(){
+				var wid=$(window).width();
+				var w2=$(".wrap2");
+				console.log(wid)
+				if(wid>1240){
+					w2.css({
+						"float":"left",
+//						"width":"1240px"
+					})
+				}
+			}
+			auto();
+		</script>
+		
+		
+		<!--<script src="../lib/jquery.circliful.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="../lib/jqcloud-1.0.4.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="../lib/Chart.js" type="text/javascript" charset="utf-8"></script>-->
+		
+	</head>
+
+	<body>
+		<div class="header">
+			<!--<div class="wrap">-->
+				<h1><img src="../img/logo.png"/>实战百科</h1>
+				<p>
+					<span id="reset"></span>
+					<input type="text" id="searchTxt"  placeholder="请输入您所要查询的身份证号码..."  />
+					<span id="search" ></span>
+				</p>
+			<!--</div>-->
+		</div>
+		<!--<nav>
+		</nav>-->
+		<!--右边侧栏-->
+		<div class="wrap1">
+			<ul>
+				<li style="background-color:#e43c59 ;">
+					<a href="#carInfo"><!---->
+						车辆分析
+					</a>
+				</li>
+				<li style="">
+					<a href="#stanceAnalyzed">
+						落脚点分析
+					</a>
+				</li>
+				<li style="">
+					<a href="#acti">日均活动跨度规律</a>
+				</li>
+				<li style="">
+					<a href="#acti30">近30天每日活动跨度</a>
+				</li>
+				<li style="">
+					<a href="#bayonet">日均经过卡口数</a>
+				</li>
+				<li style="">
+					<a href="#bayonet30">近30天每日经过卡口数</a>
+				</li>
+			</ul>	
+		</div>
+			
+		<!--中间内容-->
+		<div class="wrapAll" style="padding-top: 70px;">
+			<!--左侧栏-->
+			
+			<!--一个模块-->
+			<div class="wrap2">
+				
+			<!--<p class="page">轨迹</p>-->
+			<div class="moudle carinfo" id="carInfo">
+				<h2>车辆信息</h2>
+				<!--<dl>-->
+					<!--<dd>-->
+						<div>
+						<ul>
+							<li><label>车牌号:</label><span>D2345</span></li>
+							<li><label>购买时间：</label><span>2222年22月22日</span></li>
+							<li><label>防盗登记号：</label><span>12345678</span></li>
+							<li><label>车牌类型：</label><span>临时</span></li>
+						</ul>
+						<ul >
+							<li><label>车辆品牌:</label><span>孙冰</span></li>
+							<li><label>车辆类型：</label><span>220356443</span></li>
+							<li><label>车头照片：</label><span>无</span></li>
+							<li><label>车架号：</label><span>1234567</span></li>
+						</ul>
+						<ul >
+							<li><label>颜色编码：</label><span>1234</span></li>
+							<li><label>车辆型号：</label><span>浙江</span></li>
+							<li style="position: relative;">
+								<label>车尾照片：</label>
+								<span>有</span>
+								<img class="see" src="../img/see.png"/>
+								<span class="seeImg">
+									<!--在这里可以放入图片-->
+									<!--<img src=""/>-->
+								</span>
+							</li>
+							<li><label>电池标签：</label><span>80kg</span></li>
+						</ul>
+						<ul>
+							<li><label>电机号：</label><span>123</span></li>
+							<li><label>发票：</label><span>无</span></li>
+							<li><label>证件类型：</label><span>基督</span></li>
+							<li><label>是否有源标签：</label><span>服役</span></li>
+						</ul>
+						<div class="clearfix">
+							
+						</div>
+						</div>
+					<!--</dd>-->
+				<!--</dl>-->
+			</div>
+				
+			<!--落脚点分析分析-->
+			<div class="moudle stanceAnalyzed" style="height: 160px;overflow: hidden;" id="stanceAnalyzed">
+				<h2 >
+					<span>落脚点分析</span>	
+					<!--<span class="listbg">
+						<img class="edit" src="../img/edit.png"/>
+						<img class="message" src="../img/message.png"/>
+						<img class="deploy" src="../img/deploy.png"/>
+					</span>-->
+				</h2>
+				<!--<div>--> 
+					<!--<p class="left">
+						<span class="allday">全天（默认）</span>
+						<span class="day">白天（04:00-22:00）</span>
+						<span class="night">夜晚（22:00-04:00）</span>
+					</p>
+					<p class="right">
+					<label for="">按时间查询 </label>&nbsp;	
+					<input type="text" id="startTime" onclick="laydate()" value="" /><span> - </span>
+					<input type="text" id="endTime" onclick="laydate()" value="" />
+					 <span id="stanceSearch"><img src="../img/search.png"/></span>
+					</p>
+					<p class="clearfix"></p>-->
+					<div class="stanceMap">
+					
+					</div>
+				<!--</div>-->
+				<!--<div class="clearfix">
+					
+				</div>-->
+				
+				
+			</div>
+			<div >
+				<div class="moudle moudle2" id="acti">
+					<h2>日活动跨度规律</h2>
+					<div class="list">
+						
+					</div>
+				</div>
+				<div class="moudle moudle2 moudle3" id="acti30">
+					<h2>近30天每日活动跨度</h2>
+					<div class="list">
+						
+					</div>
+				</div>
+				<div class="clearfix">
+					
+				</div>
+			</div>
+			<div class="" style="margin-bottom: 30px;" id="bayonet">
+				<div class="moudle moudle2">
+					<h2>日进过卡口数</h2>
+					<div class="list">
+						
+					</div>
+				</div>
+				<div class="moudle moudle2 moudle3" id="bayonet30">
+					<h2>近30天每日进过卡口数</h2>
+					<div class="list">
+						
+					</div>
+				</div>
+				<div class="clearfix">
+					
+				</div>
+			</div>		
+				</div>
+			</div>
+			
+		<div class="footer">
+			<div class="wrap">
+				
+			</div>
+		</div>	
+		<!--弹窗引入-->
+		<script src="../lib/zeroModal.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../lib/zzsc.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--背景色渐变插件-->
+		<script src="../lib/jquery.color.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/electromobile.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

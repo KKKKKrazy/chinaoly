@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<!--此页作废-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<title>轨迹</title>
+		<link rel="bookmark" href="../favicon.ico" />
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/shizhan.css" />
+		<!--表格css-->
+		<link rel="stylesheet" type="text/css" href="../css/jquery.dataTables.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/detail.css" />
+		<link rel="stylesheet" type="text/css" href="../css/track.css" />
+		<!--模态框插件 0426-->
+		<link rel="stylesheet" type="text/css" href="../css/zeroModal.css" />
+		<script src="../lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function auto() {
+				var wid = $(window).width();
+				var w2 = $(".wrap2");
+				console.log(wid)
+				if(wid > 1240) {
+					w2.css({
+						"float": "left",
+						//						"width":"1240px"
+					})
+				}
+			}
+			auto();
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<!--<div class="wrap">-->
+			<h1><a href="../index.html"><img src="../img/logo.png"/>实战百科</a></h1>
+			<p>
+				<span id="reset"></span>
+				<input type="text" id="searchTxt" placeholder="请输入您所要查询的身份证号码..." />
+				<span id="search"></span>
+			</p>
+			<!--</div>-->
+		</div>
+		<!--<nav>
+		</nav>-->
+		<!--右边侧栏-->
+		<div class="wrap1">
+			<ul>
+				<li style="background-color:#e43c59 ;">
+					<a href="#carInfo">
+						<!---->
+						出差地分析
+					</a>
+				</li>
+				<li style="">
+					<a href="#stanceAnalyzed">
+						落脚点分析
+					</a>
+				</li>
+				<li style="">
+					<a href="#acti">日均活动跨度规律</a>
+				</li>
+				<li style="">
+					<a href="#acti30">近30天每日活动跨度</a>
+				</li>
+				<li style="">
+					<a href="#bayonet">日均经过卡口数</a>
+				</li>
+				<li style="">
+					<a href="#bayonet30">近30天每日经过卡口数</a>
+				</li>
+			</ul>
+		</div>
+
+		<!--中间内容-->
+		<div class="wrapAll" style="padding-top: 70px;">
+			<!--左侧栏-->
+
+			<!--一个模块-->
+			<div class="wrap2">
+
+				<p class="page">轨迹</p>
+				<div class="moudle analysis" id="analysis">
+					<h2>出差地分析</h2>
+					<!--<dl>-->
+					<!--<dd>-->
+					<div class="detail">
+						<p>
+							<span style="margin-left: 16px;"><img src="../img/detailData.png"/></span>
+							<span id="close" style="margin-right: 24px;"><img src="../img/close.png"/></span>
+						</p>
+						<div class="inner">
+							<p>
+								<table border="0" cellspacing="" cellpadding="">
+									<!--<tr><th>Header</th></tr>-->
+									<tr>
+										<td><label for="">车次:</label><span>G7505</span></td>
+										<td><label for="">席别:</label><span>06</span></td>
+										<td><label for="">座位:</label><span>300</span></td>
+										<td><label for="">行程:</label><span>绍兴-北京</span></td>
+										<td><label for="">乘车时间:</label><span>2017-4-8</span></td>
+										<td>
+											<span class="see"><img src="../img/seeMore.png"/></span>
+											<span class="posi"><img src="../img/position.png"/></span>
+										</td>
+									</tr>
+									<tr>
+										<td><label for="">车次:</label><span>G7505</span></td>
+										<td><label for="">席别:</label><span>06</span></td>
+										<td><label for="">座位:</label><span>300</span></td>
+										<td><label for="">行程:</label><span>绍兴-北京</span></td>
+										<td><label for="">乘车时间:</label><span>2017-4-8</span></td>
+										<td>
+											<span class="see"><img src="../img/seeMore.png"/></span>
+											<span class="posi"><img src="../img/position.png"/></span>
+										</td>
+
+									</tr>
+								</table>
+								<!--<span class=""><label for="">车次</label><span>G7505</span></span><span><label for="">车次</label><span>G7505</span></span><span><label for="">车次</label><span>G7505</span></span></p>-->
+						</div>
+					</div>
+					<!--</dd>-->
+					<!--</dl>-->
+				</div>
+
+				<!--民航出行图-->
+				<div class="moudle fly" id="fly">
+					<h2>
+					<span>民航出行图</span>	
+					<!--<span class="listbg">
+						<img class="edit" src="../img/edit.png"/>
+						<img class="message" src="../img/message.png"/>
+						<img class="deploy" src="../img/deploy.png"/>
+					</span>-->
+				</h2>
+					<div class="can" id="flyMap">
+
+					</div>
+					<!--<div>-->
+					<!--<p class="left">
+						<span class="allday">全天（默认）</span>
+						<span class="day">白天（04:00-22:00）</span>
+						<span class="night">夜晚（22:00-04:00）</span>
+					</p>
+					<p class="right">
+					<label for="">按时间查询 </label>&nbsp;	
+					<input type="text" id="startTime" onclick="laydate()" value="" /><span> - </span>
+					<input type="text" id="endTime" onclick="laydate()" value="" />
+					 <span id="stanceSearch"><img src="../img/search.png"/></span>
+					</p>
+					<p class="clearfix"></p>-->
+					<div class="stanceMap">
+
+					</div>
+					<!--</div>-->
+					<!--<div class="clearfix">
+					
+				</div>-->
+
+				</div>
+				<!--铁路出行图-->
+				<div>
+					<div class="moudle rail" id="rail">
+						<h2>铁路出行图</h2>
+						<div class="can" id="railMap">
+
+						</div>
+					</div>
+				</div>
+				<!--机动车信息-->
+				<div>
+					<div class="moudle vehicle" id="vehicle">
+						<h2>机动车信息</h2>
+						<div class="list"><!-- id="example" class="table table-striped table-bordered"-->
+							<table>
+								<thead>
+									<tr>
+										<th>号码号牌</th>
+										<th>中文品牌</th>
+										<th>发动机号</th>
+										<th>车辆型号</th>
+										<th>机动车所有人</th>
+										<th>状态</th>
+										<th>详情信息</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+								</tbody>
+								<!-- tbody是必须的 -->
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--公交车轨迹信息-->
+				<div>
+					<div class="moudle bus" id="bus">
+						<h2>公交车轨迹信息</h2>
+						<div class="list">
+
+						</div>
+					</div>
+				</div>
+				<!--电动车轨迹信息-->
+				<div>
+					<div class="moudle electrombile" id="electrombile">
+						<h2>电动车轨迹信息</h2>
+						<div class="list">
+
+						</div>
+					</div>
+				</div>
+				<!--旅馆记录-->
+				<div>
+					<div class="moudle hotel" id="hotel">
+						<h2>旅馆记录</h2>
+						<div class="list">
+							<table>
+								<thead>
+									<tr>
+										<th>入住酒店名称</th>
+										<th>房号</th>
+										<th>地址</th>
+										<th>管辖区</th>
+										<th>入住时间</th>
+										<th>离开时间</th>
+										<th>流水号</th>
+										<th>旅馆所属地</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+								</tbody>
+								<!-- tbody是必须的 -->
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--网吧记录-->
+				<div>
+					<div class="moudle  coffeenet" id="coffeenet">
+						<h2>网吧记录</h2>
+						<div class="list">
+							<table>
+								<thead>
+									<tr>
+										<th>网吧名称</th>
+										<th>网吧地址</th>
+										<th>所属城市</th>
+										<th>上网IP地址</th>
+										<th>电信IP地址</th>
+										<th>上线时间</th>
+										<th>下线时间</th>
+										<th>网吧机号</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+								</tbody>
+								<!-- tbody是必须的 -->
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--出入境记录-->
+				<div>
+					<div class="moudle hotel" id="hotel">
+						<h2>出入境记录</h2>
+						<div class="list">
+							<table>
+								<thead>
+									<tr>
+										<th>证件种类</th>
+										<th>证件号码</th>
+										<th>拼音名</th>
+										<th>前往国家</th>
+										<th>出境事由</th>
+										<th>证件签发日期</th>
+										<th>出发地</th>
+										<th>详情</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+									<tr>
+										<td>浙B8654A</td>
+										<td>奔驰</td>
+										<td>456</td>
+										<td>dad</td>
+										<td>结合你</td>
+										<td>违法未处理</td>
+										<td>违法未处理</td>
+										<td><img class="deta" src="../img/track-more.png"/></td>
+									</tr>
+								</tbody>
+								<!-- tbody是必须的 -->
+							</table>
+						</div>
+					</div>
+				</div>
+			</div><!--wrap2-->
+		</div>
+
+		<div class="footer">
+			<div class="wrap">
+
+			</div>
+		</div>
+		<!--弹窗引入-->
+		<script src="../lib/zeroModal.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--<script src="../lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../lib/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="../lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/track.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

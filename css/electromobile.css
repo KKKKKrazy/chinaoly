@@ -1,0 +1,238 @@
+.wrap1{
+	min-width: 160px;
+	width: 14%;
+}
+h2{
+	color: #3c3c3c;
+	font-size: 22px;
+	font-weight: 600;
+}
+label{
+	color: #A7A7A7;
+}
+.wrap1 li{
+	text-indent: 2px;
+	font-size: 20px;
+	transition: .3s;
+}
+.info td{
+	width: 25%;
+	/*float: left;*/
+	line-height: 45px;
+	color:#4d4c4c
+}
+.info label{
+	color: #a7a7a7;
+	padding-left: 10px;
+}
+/*落脚点分析*/
+.stanceAnalyzed{
+	height: auto;
+	min-height: 615px;
+}
+.stanceAnalyzed .left{
+	display: inline-block;
+	float: left;
+	line-height: 36px;
+}
+.stanceAnalyzed .right{
+	display: inline-block;
+	float: right;
+	line-height: 36px;
+	color: #d2d2d2;
+}
+.stanceAnalyzed .right input{
+	line-height: 34px;
+	height: 34px;
+	width: 128px;
+	border: 1px solid  #d2d2d2;
+	color: #3c3c3c;
+}
+span{
+	/*display: inline-block;*/
+}
+.allday{
+	display: inline-block;
+	width: 130px;
+	background-color: #7BB2E9;
+	color: #fff;
+	text-align: center;
+	line-height:36px ;
+	border-radius: 4px;
+}
+.day{
+	display: inline-block;
+	width: 200px;
+	background-color: #f9b089;
+	color: #fff;
+	text-align: center;
+	line-height:36px ;
+	border-radius: 4px;
+}
+.night{
+	display: inline-block;
+	width: 200px;
+	background-color: #8cdc54;
+	color: #fff;
+	text-align: center;
+	line-height:36px ;
+	border-radius: 4px;
+}
+#stanceSearch{
+	display: inline-block;
+	background-color: #7BB2e9;
+	height: 36px;
+	width: 50px;
+	text-align: center;
+}
+.see:hover{
+	cursor:help;
+}
+.seeImg{
+	display: inline-block;
+	position: absolute;
+	top: -94px;
+	left: 128px;
+	width: 156px;
+	height: 180px;
+	display: none;
+	background-image: url(../img/carPic.png);
+}
+.seeImg img{
+	width: 156px;
+	height: 180px;
+}
+/*落脚点地图*/
+.stanceMap{
+	height: 539px;
+	width: 100%;
+	margin-top: 30px;
+	background: palegoldenrod;
+}
+.moudle2{
+	float: left;
+	width: 49%;
+}
+.moudle3{
+	float: right;
+}
+.list{
+	height: 360px;
+	width: 100%;
+	background: paleturquoise;
+}
+.footer{
+	height: 70px;
+}
+/*0516*/
+table{
+	width: 100%;
+}
+table tbody{
+	width: 100%;
+}
+.info tr:nth-child(odd){
+	background: #EAEAEA;
+}
+.pic{
+	display:flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	justify-content:space-around;
+	-webkit-justify-content: space-around;
+	margin-top: 30px;
+}
+.pic dl{
+	/*display: inline-flex;
+	display: inl;*/
+	width: 180px;
+	height: 280px;
+	/*background: palegoldenrod;*/
+	/*margin: 0 5%;*/
+}
+.pic dl dt{
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+.pic dl dd{
+	height: 240px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: #ECECEC;
+}
+.pic dd img{
+	height: 100%;
+	width: 100%;
+}
+.info table{
+	margin-top: 20px;
+	border-bottom: 1px solid #EFEFEF;
+}
+#seller td{
+	width: 33.33%;
+}
+.pic img:hover{
+	cursor: pointer;
+}
+/*弹出图片*/
+.show {
+	margin-top: 20px;
+	overflow: hidden;
+	height: 100%;
+}
+.show img{
+	width: 100%;
+}
+.box{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	text-align: center;
+	line-height: 100%;
+}
+.box div{
+	position: relative;
+	display: inline-block;
+	/*height: 100%;*/
+	height: 80%;
+	width: auto;
+	margin-top: 5% !important;
+	overflow: hidden;
+	/*margin: 0 auto !important;*/
+}
+.box div span{
+	position: absolute;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 8px;
+	background: rgba(0,0,0,.4);
+	color: #fff;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+}
+.box div img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:auto;
+	margin: 0 auto;
+	height: 100%;
+}
+/*@keyframes wrapli
+{
+    0%   {background: #293c55;}
+    100%  {background: #e43c59;}
+}
+@-webkit-keyframes wrapli 
+{
+    0%   {background: #293c55;}
+    100%  {background: #e43c59;}
+}*/

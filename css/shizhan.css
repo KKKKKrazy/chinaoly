@@ -1,0 +1,778 @@
+html,body{
+	/*background-image: url(../img/indexBg.png);*/
+	/*overflow-y: scroll;*/
+	/*background-size: 100% 100%;*/
+	background-color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+}
+.header{
+	height: 70px;
+	width: 100%;
+	min-width: 1240px;
+	z-index: 50;
+	background-color:#293c55 ;
+	position: fixed;
+	/*left: 0;
+	top: 0;*/
+}
+.header .wrap{
+	height: 100%;
+	float: left;
+}
+.content1{
+	height: 1000px;
+	width:100%;
+	min-width: 1024px;
+	background-image:url(../img/indexBg.png) ;
+	/*background-size: 100% 100%;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+h2{
+	height: 46px;
+	font-size: 22px;
+	font-weight: 100 !important;
+	line-height: 46px;
+	text-indent: 20px;
+	margin-bottom: 11px;
+	border-bottom: 1px solid #888;
+	background: url(../img/h2-bg.jpg) left center no-repeat;
+}
+.moudle{
+	padding-top: 35px;
+}
+.baseinfo dl{
+	height: 165px;
+	min-width: 1040px;
+	position: relative;
+}
+.baseinfo  dl dt{
+	height: 100%;
+}
+.baseinfo dl dd{
+	position: absolute;
+	height: 100%;
+	
+	top: 0;
+	right: 10px;
+}
+.baseinfo dl dt{
+	width: 132px;
+	
+	margin-right: 52px;
+	height: 100%;
+	background-color: #ccc;
+	overflow: hidden;
+	border-radius: 3px;
+}
+.baseinfo dt img{
+	height: 100%;
+	width: 100%;
+}
+.baseinfo dd li img{
+	height: 20px;
+	width: 20px;
+	margin-left: 6px;
+}
+.infode:hover{
+	cursor: pointer;
+}
+.baseinfo dd{
+	min-width: 845px;
+	width: 80%;
+}
+.baseinfo p{
+	font-size: 16px;
+}
+.baseinfo label{
+	color: #a7a7a7;
+}
+.baseinfo p span{
+	margin-right: 20px;
+}
+.baseinfo .botomp{
+	position: absolute;
+	bottom: 0;
+}
+.listbg{
+	float: right;
+	display: inline-block;
+	height: 26px;
+	/*width: 26px;*/
+	/*background: url(../img/list-bg.jpg) right center no-repeat;
+	background-size: contain;*/
+	/*background-position-x: 20px;*/
+}
+.lisbg img{
+	/*display: inline-block;*/
+	float: left;
+	height: 24px;
+	width: 24px;
+}
+/*人员标签*/
+.personTag,.indexCrime{
+	float: left;
+	height: 340px;
+}
+.personTag{
+	padding-right: 5%;
+	width: 45%;
+	/*background: url(../img/personTag.jpg) center center no-repeat;
+	background-size: 300px 300px;*/
+	/*margin-right: 10%;*/
+}
+.indexCrime{
+	width: 45%;
+	/*float: right;*/
+}
+.item{
+	border: 2px solid #ccc;
+	border-radius: 7px;
+	margin: 20px 6px;
+	min-width: 330px;
+	width: 31%;
+	position: relative;
+	float: left;
+}
+.phoneNum .item p{
+	line-height: 58px;
+	height: 58px;
+	font-size: 16px;
+	text-indent: 46px;
+	background: url(../img/phone.jpg) left center no-repeat;
+	background-position-x: 13px;
+	background-size: auto 22px;
+}
+.phoneNum .item label{
+	color: #555;
+}
+.percent{
+	float: right;
+	margin-right: 6px;
+	font-size: 26px;
+	color: #ff8400;
+}
+.percent label{
+	font-size: 16px;
+}
+.biosignature .item{
+	height: 146px;
+}
+.biosignature .item dl{
+	width: 67%;
+	/*height: 100%;*/
+	margin-left: 3%;
+}
+.biosignature dt{
+	line-height: 40px;
+	font-size:20px;
+	color: #688ff8;
+}
+.biosignature dd label{
+	color: #a7a7a7;
+}
+.biosignature dd{
+	font-size: 14px;
+}
+.wen{
+	position: absolute;
+	top: 18px;
+	right: 6px;
+	height: 80px;
+	width: 80px;
+	height: auto;
+}
+.video{
+	text-align: center;
+}
+.video img:hover{
+	cursor: pointer;
+}
+/*人像资料*/
+.picInfo {
+	height: 146px;
+}
+.picInfo dl{
+	width: 70%;
+	line-height: 22px;
+	margin-top: 50px;
+	margin-left: 3%;
+}
+/*虚实结合*/
+.combine dd dl{
+	float: left;
+	min-width: 240px;
+	width: 20%;
+	padding-left: 19px;
+	border-right: 1px solid #A7A7A7;
+}
+.combine dd dl:nth-last-child{
+	border-right: 0 !important;
+}
+.combine dt{
+	float: left;
+	display: inline-block;
+	/*display:  block;*/
+	
+	line-height: 40px;
+	margin: 10px;
+    font-size: 20px;
+    color: #688ff8;
+}
+.combine dd{
+	display: inline-block;
+	float: left;
+}
+.combine>dd{
+	width: 60%;
+}
+.combine li{
+	color: #b7b7b7;
+	text-align: center;
+	line-height: 20px;
+}
+.combine .dd{
+	width: 90%;
+	min-width: 1040px;
+}
+.combine .dd dl{
+	min-width: 160px;
+	width: 23%;
+}
+.mac dt{
+	float: none;
+	display: block;
+}
+.dd>dl>dd{
+	width: 70%;
+}
+.dd ul{
+	width: 100%;
+}
+.down{
+	text-align: center;
+}
+.down img{
+	cursor: pointer;
+}
+.mac{
+	margin-top: 20px;
+	line-height: 26px;
+	font-size: 12px;
+}
+.mac dd{
+	/*float: left;*/
+	border: 1px solid #ccc;
+	display: block;
+	position: relative;
+	top: 16px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	/*width: auto !important;*/
+}
+.mac label{
+	margin-left: 20px ;
+	color:#727272
+}
+.mac span{
+	margin-right: 20px;
+}
+#myCan{
+	background: #000;
+}
+/*.wen{
+	background: url(../img/wen-bg.jpg) 300px center no-repeat;
+}*/
+.wrap{
+	position: relative;
+}
+.wrap1{
+	min-width: 160px;
+	width: 14%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 70px;
+	z-index: 20;
+	background-color: #293c55;
+	/*display: inline-block;*/
+}
+.wrap2{
+	min-width: 1040px;
+	height: 100%;
+	width:80%;
+	/*margin-top: 80px;*/
+	/*position: absolute;
+	right: 0;*/
+	/*display: inline-block;*/
+	/*margin-right: 0;*/
+	float: left;
+	/*margin-left: 200px;*/
+	margin-left: 18%;
+}
+/*04.19*/
+.listbg:hover{
+	cursor:copy;
+}
+.wrap1 li{
+	line-height: 60px;
+	text-indent:20px ;
+	transition: .3s;
+}
+.wrap1 li:hover{
+	background:#0C0C0C !important;
+}
+.wrap1 li img{
+	margin-right: 16px;
+}
+.wrap1 li a{
+	color: #f0efef;
+	font-size: 15px;
+}
+h1{
+	line-height: 70px;
+	float: left;
+	margin-left: 20px;
+	font-weight: 100 !important;
+}
+h1 a{
+	color: #f0efef;
+	font-size: 24px;
+}
+h1 a:hover{
+	color: #fff;
+}
+h1 img{
+	margin-right: 16px;
+}
+.addressAnalyzed{
+	
+}
+.addressAnalyzed .item p{
+	padding: 6px 5px;
+	line-height: 26px;
+	width: 320px;
+	/*height: 52px;*/
+	font-size: 16px;
+	text-indent: 7px;
+	/*background: url(../img/phone.jpg) left center no-repeat;*/
+	/*background-position-x: 13px;*/
+	background-size: auto 22px;
+}
+.ddressAnalyzed .start,.ddressAnalyzed .address,.ddressAnalyzed .percent{
+	display: block;
+	float: left;
+}
+.address .start{
+	width: 72px;
+}
+.address .start{
+	width: 72px;
+}
+.addressAnalyzed .item label{
+	color: #555;
+}
+.addressAnalyzed .address{
+	width:160px;
+	/*background: pink;*/
+	/*color: #555;*/
+}
+.addressAnalyzed .item label img{
+	margin-right: 8px;
+}
+.header input,.header span{
+	height: 38px;
+	float: left;
+	border: 1px solid #C6C6C6;
+	background-color: ##293c55;
+	border-radius: 2px;
+	margin-top: 16px;
+}
+.header p{
+	float: right;
+	margin-right: 40px;
+}
+#search{
+	margin-right: 40px;
+	border-left: 0;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	width: 38px;
+	background-color: #293C55;
+	background:url(../img/search.png) center center no-repeat;
+}
+.header span:hover{
+	cursor: pointer;
+}
+#searchTxt{
+	/*border-bottom-right-radius: 0;
+	border-top-right-radius: 0;*/
+	border-right: 0;
+	border-left: 0;
+	border-radius: 0;
+	width: 360px;
+	color: #C6C6C6;
+	background: #293C55;
+}
+#reset{
+	width: 38px;
+}
+#reset{
+	border-right: 0;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	background-color: #293C55;
+	background:url(../img/del.png) center center no-repeat;
+}
+#cloud{
+	height: 320px;
+	width: 450px;
+}
+/*云标签 起始*/
+
+/*云标签结束*/
+.wrapAll{
+	width: 100%;
+}
+.page{
+	width: 160px;
+	line-height: 38px;
+	background: #ed637b;
+	text-indent: 20px;
+	color: #fff;
+	font-size: 22px;
+	margin-top: 22px;
+	position: relative;
+	left: -26px;	
+}
+.item dl{
+	line-height: 18px;
+	width: 100%;
+	padding: 10px 0;
+	/*padding-bottom: 10px;*/
+}
+.item dt,.item dd{
+	display: inline-block;
+	float: left;
+}
+.item dt{
+	/*width: 66px;*/
+
+	padding-left: 5px;
+}
+.item dd.info{
+	width: 195px;
+}
+.item dd.per{
+	width: 60px;
+}
+/*基本信息*/
+.baseinfo ul{
+	min-width: 200px;
+	/*width: 20%;*/
+	float: left;
+}
+.baseinfo ul li{
+	line-height: 40px;
+}
+/*模态样式添加*/
+.add{
+	line-height: 24px;
+	border-radius:4px ;
+	border:1px solid #ccc;
+	color: #666;
+	font-size: 14px;
+	width: 80%;
+	float: right;
+}
+.subbtn{
+	display: inline-block;
+	height: 26px;
+	border: 0;
+	padding: 0 15px;
+	background: red;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 5px;
+	margin:0  auto;
+	margin-top: 12px;
+}
+/*服务处所*/
+.service .item{
+	padding:10px 0;
+}
+.service p{
+	text-indent: 10px;
+	line-height: 20px;
+}
+label{
+	color: #BCBCBC;
+}
+/*生物特征*/
+.biosignature .item dd,.biosignature .item dt{
+	display: block;
+	float: none;
+}
+.picInfo dd{
+	display: block;
+	float: none;
+	line-height: 22px;
+}
+/*弹出框样式*/
+.test{
+	border-radius: 5px;
+	color: #222;
+}
+.test p{
+	line-height: 30px;
+}
+.test .pBtn{
+	text-align: center;
+}
+.test span.red{
+	color: #e43c59;
+}
+/*评论模块*/
+.comment{
+	position: relative;
+	padding-top: 10px;
+}
+.comment p{
+	width: 84%;
+	margin-left: 5%;
+}
+.comment span{
+	color: #BCBCBC;
+}
+.comment .time{
+	margin-right: 60px;
+}
+.myComm{
+	width: 100%;
+	border-radius: 5px;
+	height: 28px;
+	border: 0;
+}
+.subCom{
+	height: 26px;
+	width: 80px;
+	border: 0;
+	border-radius: 3px;
+	background: peachpuff;
+	color: #fff;
+	font-weight: 600;
+	text-shadow:0 0 1px black;
+}
+.comment .absoRig{
+	display: inline-block;
+	position: absolute;
+	top: 13px;
+	right: 20px;
+}
+.zan{
+	height: 24px;
+	width: 24px;
+}
+.zanNum{
+	display: inline-block;
+	width: 60px;
+	color: #333 !important;
+}
+.zan:hover{
+	cursor: pointer;
+}
+.test2{
+	display: none;
+}
+/*折叠显示*/
+.deployshow{
+	height: auto !important;
+	overflow: visible !important;
+}
+.block{
+	display: block !important;
+}
+/*弹出的表*/
+.test table{
+	border-color: #ccc;
+	text-align: center;
+	line-height: 22px;
+}
+.test table thead{
+	line-height: 26px;
+}
+.test table{
+	width: 94%;
+	margin: 0 auto;
+}
+.test table tbody{
+	width: 100%;
+}
+.test table th{
+	background-color: #EAEAEA;
+}
+.pt80{
+	padding-top: 80px !important;
+}
+/*tab*/
+.demo {
+  /*width: 660px;*/
+  width: 100%;
+  margin: 20px auto;
+} 
+.nav:after,
+.nav:before {
+  content:"";
+  display: table;
+} 
+.nav:after {
+  clear:both;
+  overflow:hidden;
+}
+.nav {
+  zoom: 1;
+  margin-left: 10px;
+}
+.nav li {
+  list-style: none outside none;
+  float: left;
+  position: relative;/*这个很重要*/
+}
+.nav .active {
+  z-index: 3;/*当前项在最顶端*/
+}
+.nav li:before,
+.nav li:after,
+.nav  a:before,
+.nav  a:after {
+  content:"";
+  position: absolute;
+  bottom:0;
+
+}
+.nav li:before,
+.nav li:after {
+  background: rgb(10, 41, 30);
+   background:#293c55 ;
+  width: 10px;
+  height: 10px;
+}
+.nav li:before {
+  left: -10px;
+}
+.nav li:after {
+  right: -10px;
+}
+.nav a {
+  float: left;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: rgb(220, 225, 233);
+  background: rgb(10, 41, 30);
+  background:#293c55 ;
+  border-radius: 10px 10px 0 0;
+}
+.nav .active a {
+  background: rgb(220, 225, 233);
+  /*background: #293c55;*/
+  color:rgb(10, 41, 30);
+}
+
+.nav  a:before,
+.nav  a:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: rgb(10, 41, 30);
+   background:#293c55 ;
+  z-index: 2;/*圆形在矩形上面*/
+}
+.nav .active a:before,
+.nav .active a:after {
+  background: rgb(10, 41, 30);
+   background:#293c55 ;
+}
+.nav  a:before {
+  left:-20px; 
+}
+.nav  a:after {
+  right: -20px;
+}
+/*当前项的:after和:before的z-index值为1*/
+.nav .active:before,
+.nav .active:after {
+  z-index: 1;/*当前项的矩形在圆形下面*/
+  background: rgb(220, 225, 233);
+}
+/*第一个选项卡的:before和最后一个选项卡的:after背景色不一样*/
+.nav li:first-child a:before,
+.nav li:last-child a:after {
+  background-color: #fff;
+}
+.tab-content {
+  background: rgb(220, 225, 233);
+  /*background: #EFEFEF;*/
+  color:rgb(10, 41, 30);
+  padding: 15px 10px;
+  border: 1px solid rgb(220, 225, 233);
+  border-top-width: 3px;
+}
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+/*tab end*/
+.tableDemo{
+	width: 100%;
+	line-height: 20px;
+	background: #FFFAFA;
+}
+.tableDemo tbody{
+	width: 100%;
+}
+.tableDemo  th{
+	font-weight: 100;
+	padding: 10px 0;
+	text-align: center;
+	background:#789 ;
+	/*background: rgb(10, 41, 30);*/
+	color:#fff ;
+}
+.tableDemo td{
+	padding:8px 0 ;
+	text-align: center;
+}
+.tableDemo tbody tr:nth-of-type(odd){
+	background: #e5e5e5;
+}
+.demo2{
+	margin-bottom: 20px;
+}
+.demo2 thead th{
+	font-weight: 600;
+	line-height: 24px;
+	background: #4A708B;
+	color: #fff;
+	text-align: center;
+	
+}
+.demo3,.demo3 tbody{
+	width: 100%;
+}
+.demo3 th,.demo3 td{
+	padding: 8px 0;
+	line-height: 20px;
+	text-align: left;
+	padding-left: 4px;
+}
+.demo3 th{
+	background: #e0e0e0;
+	font-weight: 100;
+}
+.demo3 td{
+	background: #FFFAFA;
+}

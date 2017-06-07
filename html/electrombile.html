@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<title>电动车百科</title>
+		<link rel="bookmark" href="../favicon.ico" />
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="icon"  href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/shizhan.css" />
+		<link rel="stylesheet" type="text/css" href="../css/electromobile.css" />
+		<!--模态框插件 0426-->
+		<link rel="stylesheet" type="text/css" href="../css/zeroModal.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/laydate.css"/>-->
+		<!--[if lte IE 8]>
+		<script src="excanvas.js"></script>
+		<![endif]-->
+		<!--<script src="../lib/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function auto() {
+				var wid = $(window).width();
+				var w2 = $(".wrap2");
+				console.log(wid)
+				if(wid > 1240) {
+					w2.css({
+						"float": "left",
+						//						"width":"1240px"
+					})
+				}
+			}
+			auto();
+		</script>
+
+		<!--<script src="../lib/jquery.circliful.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="../lib/jqcloud-1.0.4.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="../lib/Chart.js" type="text/javascript" charset="utf-8"></script>-->
+
+	</head>
+
+	<body class="pace-d">
+		<div class="header">
+			<!--<div class="wrap">-->
+			<h1><a href="../index.html"><img src="../img/logo.png"/>实战百科</a></h1>
+			<p>
+				<span id="reset"></span>
+				<input type="text" id="searchTxt" placeholder="请输入您所要查询的车牌号码..." />
+				<span id="search"></span>
+			</p>
+			<!--</div>-->
+		</div>
+		<!--<nav>
+		</nav>-->
+		<!--右边侧栏-->
+		<div class="wrap1">
+			<ul>
+				<li style="background-color:#e43c59 ;">
+					<a href="#baseInfo">
+						车辆信息
+					</a>
+				</li>
+				<li style="">
+					<a href="#changeInfo">
+						变更信息
+					</a>
+				</li>
+				<li style="">
+					<a href="#seller">
+						销售商信息
+					</a>
+				</li>
+				<!--<li style="">
+					<a href="#act">
+						活动轨迹
+					</a>
+				</li>-->
+				<li style="">
+					<a href="#stanceAnalyzed">
+						落脚点分析
+					</a>
+				</li>
+				<li style="">
+					<a href="#acti">日均活动跨度规律</a>
+				</li>
+				<li style="">
+					<a href="#acti30">近30天每日活动跨度</a>
+				</li>
+				<li style="">
+					<a href="#bayonet">日均经过卡口数</a>
+				</li>
+				<li style="">
+					<a href="#bayonet30">近30天每日经过卡口数</a>
+				</li>
+				<li style="">
+					<a href="#">回到顶部</a>
+				</li>
+			</ul>
+		</div>
+
+		<!--中间内容-->
+		<div class="wrapAll" style="padding-top: 70px;">
+			<!--左侧栏-->
+
+			<!--一个模块-->
+			<div class="wrap2">
+
+				<!--<p class="page">轨迹</p>-->
+				<!--基本信息-->
+				<div class="moudle baseInfo" id="baseInfo">
+					<h2>基本信息</h2>
+					<!--<dl>-->
+					<!--<dd>-->
+					<div class="info">
+						<table border="0" cellspacing="" cellpadding="">
+							<tr>
+								<td><label>车牌号：</label><span>D2345</span></td>
+								<td><label>品牌：</label><span>孙冰</span></td>
+								<td><label>颜色编码：</label><span>1234</span></td>
+								<td><label>电机号：</label><span>123</span></td>
+							</tr>
+							<tr>
+								<td><label>车架号：</label><span>2222年22月22日</span></td>
+								<td><label>购买时间：</label><span>220356443</span></td>
+								<td><label>车辆类型：</label><span>浙江</span></td>
+								<td><label>防盗登记号：</label><span>无</span></td>
+							</tr>
+							<tr>
+								<td><label>第一次登记：</label><span>12345678</span></td>
+								<td><label>变更状态：</label><span>无</span></td>
+								<td><label>过户状态：</label><span>浙江</span></td>
+								<td><label>锁定状态：</label><span>基督</span></td>
+							</tr>
+							<tr>
+								<td><label>是否失效：</label><span>临时</span></td>
+								<td><label>是否安装有源标签：</label><span>1234567</span></td>
+								<td><label>证件类型：</label><span>80kg</span></td>
+								<td><label>登记人身份证：</label><span>服役</span></td>
+							</tr>
+							<tr>
+								<td><label>现住址：</label><span>临时</span></td>
+								<td><label>电话：</label><span>1234567</span></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+
+						<div class="pic">
+							<dl>
+								<dt>证件号码</dt>
+								<dd>
+									<img src="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2014/12/30/147cef5299a890d7b7dddb5c576101e3/products/uber-zoom/img/5.jpg"/>
+								</dd>
+							</dl>
+							<dl>
+								<dt>证件号码</dt>
+								<dd>
+									<img src="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2014/12/30/147cef5299a890d7b7dddb5c576101e3/products/uber-zoom/img/4.jpg" />
+								</dd>
+							</dl>
+							<dl>
+								<dt>证件号码</dt>
+								<dd>
+									<img src="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2014/12/30/147cef5299a890d7b7dddb5c576101e3/products/uber-zoom/img/2.jpg" />
+								</dd>
+							</dl>
+
+						</div>
+					</div>
+					<!--</dd>-->
+					<!--</dl>-->
+				</div>
+				<!--变更信息-->
+				<div class="moudle changeInfo" id="changeInfo">
+					<h2>变更信息</h2>
+					<div class="info">
+						<table border="0" cellspacing="" cellpadding="">
+							<tr>
+								<td><label>变更类型：</label><span>D2345</span></td>
+								<td><label>变更后ID：</label><span>孙冰</span></td>
+								<td><label>第一次登记ID：</label><span>1234</span></td>
+								<td><label>登记者姓名：</label><span>123</span></td>
+							</tr>
+							<tr>
+								<td><label>变更前车牌：</label><span>2222年22月22日</span></td>
+								<td><label>变更后车牌：</label><span>220356443</span></td>
+								<td><label>变更前防盗登记号：</label><span>浙江</span></td>
+								<td><label>变更后防盗登记号：</label><span>无</span></td>
+							</tr>
+							<tr>
+								<td><label>证件号：</label><span>临时</span></td>
+								<td><label>现住址：</label><span>1234567</span></td>
+								<td><label>变更原因：</label><span>1234567</span></td>
+								<td></td>
+							</tr>
+						</table>
+
+						<div class="pic">
+							<dl>
+								<dt>证件号码</dt>
+								<dd>
+									<img src="http://pic1.win4000.com/wallpaper/1/57845a7b63097.jpg"/>
+								</dd>
+							</dl>
+							<dl>
+								<dt>车头照片</dt>
+								<dd>
+									<img src="http://img2.3lian.com/2014/f5/73/d/62.jpg" />
+								</dd>
+							</dl>
+							<dl>
+								<dt>车尾照片</dt>
+								<dd>
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495018908652&di=24a8771d91fd0fa103dba294cd7edfd8&imgtype=0&src=http%3A%2F%2Fa3.topitme.com%2F3%2Fbd%2F11%2F112773428852a11bd3o.jpg" />
+								</dd>
+							</dl>
+
+						</div>
+						<!--<div class="show" style="background: paleturquoise;">
+							<img src="../img/test/timg.jpg" />
+						</div>-->
+					</div>
+					<!--</dd>-->
+					<!--</dl>-->
+				</div>
+				<!--销售商信息-->
+				<div class="moudle seller" id="seller">
+					<h2>销售商信息</h2>
+					<div class="info">
+						<table border="0" cellspacing="" cellpadding="">
+							<tr>
+								<td><label>登记点名称：</label><span>D2345</span></td>
+								<td><label>销售派出所：</label><span>孙冰</span></td>
+								<td><label>店铺地址：</label><span>1234</span></td>
+							</tr>
+							<tr>
+								<td><label>负责人姓名：</label><span>2222年22月22日</span></td>
+								<td><label>身份证：</label><span>220356443</span></td>
+								<td><label>手机：</label><span>浙江</span></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--活动轨迹--><!--在这里引入表和查询-->
+				<!--<div class="moudle act" id="act">
+					<h2>活动轨迹</h2>
+					<div class=" ">
+						
+					</div>
+				</div>-->
+				<!--落脚点分析分析-->
+				<div class="moudle stanceAnalyzed" style="height: 160px;overflow: hidden;" id="stanceAnalyzed">
+					<h2>
+					<span>落脚点分析</span>	
+					<!--<span class="listbg">
+						<img class="edit" src="../img/edit.png"/>
+						<img class="message" src="../img/message.png"/>
+						<img class="deploy" src="../img/deploy.png"/>
+					</span>-->
+				</h2>
+					<!--<div>-->
+					<!--<p class="left">
+						<span class="allday">全天（默认）</span>
+						<span class="day">白天（04:00-22:00）</span>
+						<span class="night">夜晚（22:00-04:00）</span>
+					</p>
+					<p class="right">
+					<label for="">按时间查询 </label>&nbsp;	
+					<input type="text" id="startTime" onclick="laydate()" value="" /><span> - </span>
+					<input type="text" id="endTime" onclick="laydate()" value="" />
+					 <span id="stanceSearch"><img src="../img/search.png"/></span>
+					</p>
+					<p class="clearfix"></p>-->
+					<div class="stanceMap" id="stanceMap">
+
+					</div>
+					<!--</div>-->
+					<!--<div class="clearfix">
+					
+				</div>-->
+
+				</div>
+				<div>
+					<div class="moudle moudle2" id="acti">
+						<h2>日活动跨度规律</h2>
+						<div class="list">
+
+						</div>
+					</div>
+					<div class="moudle moudle2 moudle3" id="acti30">
+						<h2>近30天每日活动跨度</h2>
+						<div class="list">
+
+						</div>
+					</div>
+					<div class="clearfix">
+
+					</div>
+				</div>
+				<div class="" style="margin-bottom: 30px;" id="bayonet">
+					<div class="moudle moudle2">
+						<h2>日进过卡口数</h2>
+						<div class="list">
+
+						</div>
+					</div>
+					<div class="moudle moudle2 moudle3" id="bayonet30">
+						<h2>近30天每日进过卡口数</h2>
+						<div class="list">
+
+						</div>
+					</div>
+					<div class="clearfix">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="wrap">
+
+			</div>
+		</div>
+		<!--遮罩层-->
+		<div class="box" style="display: none;">
+			<div >
+				<!--<span id="close">关闭</span>-->
+				<img src=""/>
+			</div>
+			
+		</div>
+		<!--弹窗引入-->
+		<script src="../lib/zeroModal.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../lib/zzsc.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=zQMbPcshH9c22Zuke0FiWOfw0gu3qQzU"></script>
+		<script src="../lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/electromobile.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,212 @@
+/*.wrap1 li{
+	text-indent: 2px;
+}*/
+.detail{
+	width: 96%;
+	margin: 0 auto;
+	background: #EFEFEF;
+}
+.detail P:nth-child(1){
+	margin-top: 10px;
+	padding-top: 10px;
+	position: relative;
+}
+#close{
+	position: absolute;
+	right: 24px;
+}
+.inner{
+	width: 94%;
+	margin: 0 auto;
+}
+.inner table{
+	display: block;
+	widows: 100%;
+}
+.inner tbody{
+	display: block;
+}
+.inner tr{
+	position: relative;
+	line-height: 50px;
+	display: block;	
+	border-bottom:1px dashed #A7A7A7 ;
+}
+.inner tr:nth-last-child(1){
+	border-bottom: 0 !important;
+}
+.inner td{
+	display: inline-block;
+	width: 14%;
+	
+	/*float: left;*/
+}
+.inner tr .see{
+	/*position: absolute;*/
+	right: 40px;
+	top: 0;
+}
+.inner tr td:nth-last-child(1){
+	width: 25%;
+	position: relative;
+	text-align: right;
+}
+.inner tr .posi{
+	margin-left: 28px;
+	/*position: absolute;*/
+}
+.can{
+	margin-top: 26px;
+	background: #000000;
+	height: 560px;
+}
+.list thead tr{
+	background: #be4242;
+	color: white;
+}
+.list table{
+	width: 100%;
+	margin-top: 20px;
+}
+.list table tbody{
+	width: 100%;
+}
+.list table thead{
+	line-height: 48px;
+}
+.list table tbody{
+	line-height: 28px;
+}
+.list table tbody td{
+	padding:  8px  0;
+	min-height: 46px;
+}
+.list table tbody tr:nth-of-type(odd){
+	background: #EFEFEF;
+}
+.carTrack{
+	color: #333;
+	width: 100%;
+	border-bottom: 1px dashed #ccc;
+	margin-top: 20px;
+	padding-bottom: 8px;
+}
+.carTrack:nth-last-of-type(1){
+	border-bottom:0 ;
+}
+.carTrack td,.carTrack th{
+	line-height: 22px;
+	padding: 12px 0;
+	text-align: left;
+}
+.carTrack thead{
+	font-size: 16px;
+	font-weight: 200 !important;
+}
+.carTrack thead span{
+	color: rgb(255,159,44);
+}
+.carTrack label{
+	margin-left: 8px;
+}
+.carTrack tbody label{
+	color: #BCBCBC;
+}
+.carTrack tbody td img{
+	height: 22px;
+	width: 22px;
+}
+tfoot tr td{
+	text-align: right !important;
+	color: #B7B7B7;
+	line-height: 22px;
+	padding: 10px 0;
+}
+.cardWrap{
+	width: 100%;
+	margin: 20px auto;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	justify-content:space-around;
+	-webkit-justify-content: space-around;
+	/*box-align:center;
+	-webkit-box-align: center;
+	-moz-box-align: center;*/
+	align-items: center;
+	-webkit-align-items:center;
+}
+.card{
+	/*width: 300px;*/
+	display: inline-block;
+	font-size: 16px;
+	line-height: 30px;
+	padding:  10px;
+	border:1px solid rgb(61,203,155);
+	border-radius: 6px;
+	margin: 20px;
+	margin-bottom: 20px;
+}
+.card .title{
+	
+	padding: 6px 0;
+	
+}
+.card .title span{
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	color: rgb(255,159,44);
+	padding: 0 10px;
+	height: 100%;
+	margin-left: 10px;
+}
+.card .more{
+	float: right;
+}
+.pubBicycle .cardWrap{
+	width: 100%;
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-width: 50%;
+	-moz-column-width: 50%;
+	-webkit-column-width: 50%;
+	
+	columns: 2;
+	-moz-columns: 2;
+	-webkit-columns: 2;
+	
+}
+.electrombile .cardWrap{
+	width: 100%;
+	/*columns: 3;
+	-moz-columns: 3;
+	-webkit-columns: 3;*/
+	column-count: 3;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	
+}
+.electrombile .card{
+	/*display: flexb;*/
+		padding: 18px 10px;
+		/*margin: 0 100px;*/
+}
+table.pub{
+	border-color:rgba(61,203,155,.5) ;
+	/*border-color:mediumspringgreen;*/
+}
+table.pub th {
+	background: rgb(61,203,155);
+	color: #fff;
+	border-bottom-color: #fff;
+}
+table.pub tr:nth-last-of-type(1) th{
+	border-bottom-color:rgb(61,203,155) ;
+}

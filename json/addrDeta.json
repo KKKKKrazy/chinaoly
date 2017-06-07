@@ -1,0 +1,45 @@
+{
+	"code":100,
+    "data": [
+        {
+            "address": "地址1", 
+            "origin": "常口", 
+            "confidence": "92%",
+            "firstGather":"2013-12-12",
+            "lastGather":"2015-12-12",
+            "gatherNum":"2",
+            "gatherMan":"系统",
+            "gatherReason":"重点人员"
+        }, 
+        {
+            "address": "地址2", 
+            "origin": "流口", 
+            "confidence": "91%",
+            "firstGather":"2013-12-12",
+            "lastGather":"2015-12-12",
+            "gatherNum":"2",
+            "gatherMan":"电脑",
+            "gatherReason":"重点人员"
+        }, 
+        {
+           "address": "地址3", 
+            "origin": "流口", 
+            "confidence": "98%",
+            "firstGather":"2013-12-12",
+            "lastGather":"2015-12-12",
+            "gatherNum":"2",
+            "gatherMan":"系统",
+            "gatherReason":"重点人员"
+        }, 
+        {
+            "address": "北京市东花市北里20号楼6单元501室  ", 
+            "origin": "常口", 
+            "confidence": "92%",
+            "firstGather":"2013-12-12",
+            "lastGather":"2015-12-12",
+            "gatherNum":"5",
+            "gatherMan":"系统",
+            "gatherReason":"重点人员"
+        }
+    ]
+}

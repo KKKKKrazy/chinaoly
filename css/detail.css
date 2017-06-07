@@ -1,0 +1,48 @@
+/*详情样式*/
+.header{
+	height: 70px;
+	width: 100%;
+	min-width: 1240px;
+	z-index: 50;
+	background-color:#293c55 ;
+	position: fixed;
+	/*left: 0;
+	top: 0;*/
+}
+
+h1{
+	line-height: 70px;
+	float: left;
+	margin-left: 20px;
+	font-weight: 100 !important;
+}
+/*.test{
+	height: 100px;
+}*/
+h1 a{
+	color: #f0efef;
+	font-size: 24px;
+}
+h1 a:hover{
+	color: #fff;
+}
+h1 img{
+	margin-right: 16px;
+}
+#container{
+	width: 94%;
+	margin: 0 auto;
+	/*margin-top: 100px;*/
+}
+#example{
+	width: 100% !important;
+	margin-top: 30px !important;
+}
+
+tr{
+	/*border:10px solid #000 !important;*/
+}
+td{text-align: center !important;}
+table tbody tr.odd {
+    background-color: #DBE0E7;
+}
